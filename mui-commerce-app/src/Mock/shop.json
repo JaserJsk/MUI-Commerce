@@ -1,0 +1,29 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "title": "Mens",
+      "img": "mens.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Womans",
+      "img": "womans.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Unisex",
+      "img": "unisex.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Kids",
+      "img": "kids.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Customs",
+      "img": "customs.jpg"
+    }
+  ]
+}

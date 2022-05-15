@@ -1,0 +1,243 @@
+// color variants
+@import '_blueTheme.module.scss';
+
+// third-party
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+// ==============================|| LIGHT BOX ||============================== //
+.slick-arrow:before {
+  color: $grey500;
+}
+
+// ==============================|| LIGHT BOX ||============================== //
+.fullscreen .react-images__blanket {
+  z-index: 1200;
+}
+
+// ==============================|| APEXCHART ||============================== //
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+  margin-right: 8px;
+}
+
+// ==============================|| PERFECT SCROLLBAR ||============================== //
+
+.scrollbar-container {
+  .ps__rail-y {
+    &:hover > .ps__thumb-y,
+    &:focus > .ps__thumb-y,
+    &.ps--clicking .ps__thumb-y {
+      background-color: $grey500;
+      width: 5px;
+    }
+  }
+  .ps__thumb-y {
+    background-color: $grey500;
+    border-radius: 6px;
+    width: 5px;
+    right: 0;
+  }
+}
+
+.scrollbar-container.ps,
+.scrollbar-container > .ps {
+  &.ps--active-y > .ps__rail-y {
+    width: 5px;
+    background-color: transparent !important;
+    z-index: 999;
+    &:hover,
+    &.ps--clicking {
+      width: 5px;
+      background-color: transparent;
+    }
+  }
+  &.ps--scrolling-y > .ps__rail-y,
+  &.ps--scrolling-x > .ps__rail-x {
+    opacity: 0.4;
+    background-color: transparent;
+  }
+}
+
+// ==============================|| ANIMATION KEYFRAMES ||============================== //
+
+@keyframes wings {
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -5px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -7px, 0);
+  }
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes slideY {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes slideX {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+// ==============================|| BANNER GRID ||============================== //
+.banner-grid {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ff466b;
+}
+
+.right-banner-grid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.left-banner-grid {
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+.left-banner-grid p {
+  color: #000000;
+  font-size: large;
+}
+
+// ==============================|| REACT MASONRY ||============================== //
+.masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+/* Optional, different gutter size on mobile */
+@media (max-width: 800px) {
+  .masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
+
+// ==============================|| IMG ZOOM ANIMATION ||============================== //
+
+.img-hover-zoom {
+  position: relative;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 1.2s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.img-hover-zoom:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
