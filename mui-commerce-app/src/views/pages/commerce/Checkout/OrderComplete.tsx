@@ -125,7 +125,7 @@ const OrderComplete = ({ open }: { open: boolean }) => {
                 <Grid item>
                   <Button
                     component={Link}
-                    to="/commerce/products"
+                    to="/commerce"
                     variant="text"
                     startIcon={<KeyboardBackspaceIcon />}
                   >
@@ -135,7 +135,7 @@ const OrderComplete = ({ open }: { open: boolean }) => {
                 <Grid item>
                   <Button
                     component={Link}
-                    to="/commerce/products"
+                    to="/commerce"
                     variant="contained"
                     fullWidth
                   >

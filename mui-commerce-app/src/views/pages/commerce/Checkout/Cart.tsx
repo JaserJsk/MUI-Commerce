@@ -287,7 +287,7 @@ const Cart = ({
           <Grid item xs={12} md={7} lg={8}>
             <Button
               component={Link}
-              to="/commerce/products"
+              to="/commerce"
               variant="text"
               startIcon={<KeyboardBackspaceIcon />}
             >

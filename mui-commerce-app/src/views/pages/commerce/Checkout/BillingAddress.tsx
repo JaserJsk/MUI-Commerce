@@ -133,15 +133,13 @@ const BillingAddress = ({
             <Grid item xs={12}>
               <Stack spacing={0.25}>
                 <Typography variant="caption">Email</Typography>
-                <Typography variant="subtitle1">
-                  deliaturewpo@company.com
-                </Typography>
+                <Typography variant="subtitle1">john.doe@gmail.com</Typography>
               </Stack>
             </Grid>
             <Grid item xs={12}>
               <Stack spacing={0.25}>
                 <Typography variant="caption">Contact</Typography>
-                <Typography variant="subtitle1">(980) 473-2942</Typography>
+                <Typography variant="subtitle1">(+46) 651 22 10</Typography>
               </Stack>
             </Grid>
             <Grid item xs={12}>
