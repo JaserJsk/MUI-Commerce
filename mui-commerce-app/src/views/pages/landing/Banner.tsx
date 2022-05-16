@@ -2,7 +2,7 @@
 import { Box, Grid, Typography, Button } from '@mui/material';
 
 // Assets
-import bannerImage from 'assets/images/ecommerce/categories/banner.jpg';
+import bannerImage from 'assets/images/commerce/categories/banner.jpg';
 
 // ==============================|| LANDING - BANNER PAGE ||============================== //
 

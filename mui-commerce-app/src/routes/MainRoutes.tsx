@@ -4,12 +4,12 @@ import { lazy } from 'react';
 import Loadable from 'components/Loadable';
 import MainLayout from 'layout/MainLayout';
 
-const Commerce = Loadable(lazy(() => import('views/pages/ecommerce')));
+const Commerce = Loadable(lazy(() => import('views/pages/commerce')));
 
 const ProductDetails = Loadable(
-  lazy(() => import('views/pages/ecommerce/ProductDetails'))
+  lazy(() => import('views/pages/commerce/ProductDetails'))
 );
-const Checkout = Loadable(lazy(() => import('views/pages/ecommerce/Checkout')));
+const Checkout = Loadable(lazy(() => import('views/pages/commerce/Checkout')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 

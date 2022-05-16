@@ -14,13 +14,8 @@ import { OverridableComponent } from '@mui/material/OverridableComponent';
 // Project Imports
 import { TablerIcon } from '@tabler/icons';
 import { CartStateProps } from './cart';
-import { KanbanStateProps } from './kanban';
 import { CustomerStateProps } from './customer';
-import { ContactStateProps } from './contact';
-import { ProductStateProps } from './ecommerce';
-import { ChatStateProps } from './chat';
-import { CalendarStateProps } from './calendar';
-import { MailStateProps } from './mail';
+import { ProductStateProps } from './commerce';
 import { UserStateProps } from './user';
 
 import { SnackbarProps } from './snackbar';
@@ -120,13 +115,8 @@ export interface ColorPaletteProps {
 export interface DefaultRootStateProps {
   snackbar: SnackbarProps;
   cart: CartStateProps;
-  kanban: KanbanStateProps;
   customer: CustomerStateProps;
-  contact: ContactStateProps;
   product: ProductStateProps;
-  chat: ChatStateProps;
-  calendar: CalendarStateProps;
-  mail: MailStateProps;
   user: UserStateProps;
 }
 
@@ -166,7 +156,7 @@ export type StringNumFunc = (s: string) => number;
 export type NumbColorFunc = (n: number) => StringColorProps | undefined;
 export type ChangeEventFunc = (e: React.ChangeEvent<HTMLInputElement>) => void;
 
-// amit
+// Amit
 
 export type KeyedObject = {
   [key: string]: string | number | KeyedObject | any;

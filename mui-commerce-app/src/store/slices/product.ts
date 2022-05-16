@@ -7,7 +7,7 @@ import { dispatch } from '../index';
 
 // Types
 import { DefaultRootStateProps } from 'types';
-import { ProductsFilter, Address } from 'types/ecommerce';
+import { ProductsFilter, Address } from 'types/commerce';
 
 // ----------------------------------------------------------------------
 

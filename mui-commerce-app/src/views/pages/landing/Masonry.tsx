@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Button, Grid } from '@mui/material';
 
 // Data
-import ShopData from 'Mock/shop.json';
+import ShopData from 'mock/shop.json';
 
 // Third Party
 import Masonry from 'react-masonry-css';
@@ -19,7 +19,7 @@ const MasonryPage = () => {
     500: 1,
   };
 
-  const catImage = require.context('assets/images/ecommerce/categories/', true);
+  const catImage = require.context('assets/images/commerce/categories/', true);
 
   return (
     <Grid item xs={12} sx={{ mt: 6 }}>

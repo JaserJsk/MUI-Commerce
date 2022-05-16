@@ -23,7 +23,7 @@ import { ProductCardProps } from 'types/cart';
 // Assets
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 
-const prodImage = require.context('assets/images/ecommerce', true);
+const prodImage = require.context('assets/images/commerce', true);
 
 // ==============================|| PRODUCT CARD ||============================== //
 
