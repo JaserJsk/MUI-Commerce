@@ -75,7 +75,7 @@ const products: Products[] = [
     offerPrice: 29.59,
     gender: 'male',
     categories: ['illustration', 'hoodies'],
-    colors: ['errorLight', 'orangeMain', 'warningMain'],
+    colors: ['orangeMain', 'warningMain', 'primaryDark'],
     popularity: chance.natural(),
     date: chance.natural(),
     created: sub(new Date(), { days: 7, hours: 6, minutes: 45 }),
