@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Button, Grid } from '@mui/material';
 
 // Data
-import ShopData from 'mock/shop.json';
+import ShopData from 'Mock/shop.json';
 
 // Third Party
 import Masonry from 'react-masonry-css';
